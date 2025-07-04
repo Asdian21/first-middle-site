@@ -1,0 +1,6 @@
+:root {
+    --black-bg: #0F0F0F;
+    --white: #FFFFFF;
+    --disabled: #4A4A4A;
+    --active: var(--white);
+}
