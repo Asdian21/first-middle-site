@@ -1,8 +1,11 @@
 import { useState } from "react";
-import { StyleSection_1 } from "./Section_1.style";
+import { StyleNumber, StyleSection_1 } from "./Section_1.style";
+import { BasicMenu } from "../../../components/BasicMenu/BasicMenu";
+import { SearchBar } from "../../../components/SearchBar/SearchBar";
+import { Icons } from "../../../components/Icons/Icons";
 
 export const Section_1 = () => {
-	const [activeIndex, setActiveIndex] = useState(Number);
+	const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
 	const menuItems = [
 		{ id: 0, label: "О нас" },
@@ -47,6 +50,40 @@ export const Section_1 = () => {
 						</a>
 					))}
 				</div>
+			</div>
+			<div className="second_line">
+				<div className="logo"></div>
+				<div className="search">
+					<div className="catalog">
+						<BasicMenu />
+					</div>
+					<SearchBar />
+				</div>
+				<div className="free_for_regions">
+					<div className="left_side">
+						<div className="left_top">
+							<StyleNumber>
+								<img src="./MainPage/phoneIcon.svg" alt="phoneIcon" />
+								<span>+7 (800) 707 99 20</span>
+							</StyleNumber>{" "}
+							<button>
+								<img src="./MainPage/arrow_down_2.svg" alt="arrow_down_2" />
+							</button>
+						</div>
+						<span className="left_bottom">Бесплатно для регионов</span>
+					</div>
+					<div className="right_side">
+						<StyleNumber>
+							<img src="./MainPage/phoneIcon.svg" alt="phoneIcon" />
+							<span>+7 (800) 707 99 20</span>
+						</StyleNumber>
+						<StyleNumber>
+							<img src="./MainPage/phoneIcon.svg" alt="phoneIcon" />
+							<span>+7 (800) 707 99 20</span>
+						</StyleNumber>
+					</div>
+				</div>
+				<Icons />
 			</div>
 		</StyleSection_1>
 	);

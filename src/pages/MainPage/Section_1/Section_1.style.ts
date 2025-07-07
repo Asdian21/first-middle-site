@@ -2,19 +2,21 @@ import styled from "styled-components";
 
 export const StyleSection_1 = styled.div`
 	display: flex;
+	flex-direction: column;
 	width: 100%;
-	height: 47px;
-	background-color: var(--black-bg);
-	align-items: center;
 	.first_line {
 		display: flex;
-		margin: auto 50px;
+		background-color: var(--black-bg);
+		align-items: center;
+		height: 47px;
+
 		width: 100%;
 
 		.left_info_container {
 			display: flex;
-			width: 700px;
+			width: 705px;
 			margin-right: auto;
+			margin-left: 50px;
 
 			.location {
 				.locationImg {
@@ -59,6 +61,7 @@ export const StyleSection_1 = styled.div`
 			gap: 40px;
 			justify-content: center;
 			align-items: center;
+			margin-right: 50px;
 
 			.active {
 				color: var(--active);
@@ -75,5 +78,88 @@ export const StyleSection_1 = styled.div`
 	}
 
 	.second_line {
+		display: flex;
+		width: 100%;
+		height: 93px;
+		align-items: center;
+		background-color: var(--light-black-bg);
+
+		.logo {
+			background-image: url("./MainPage/logo.png");
+			background-repeat: no-repeat;
+			width: 172px;
+			height: 79px;
+			margin: 7px 64px 7px 50px;
+		}
+		.search {
+			display: flex;
+			width: 684px;
+			height: 54px;
+			margin-right: 46px;
+			.catalog {
+				width: 132px;
+				height: 100%;
+			}
+			.searchBar {
+				position: relative;
+				background-color: var(--input-bg);
+				width: 552px;
+				height: 54px;
+				border-radius: 0px 5px 5px 0px;
+				display: flex;
+				padding-left: 15px;
+				font: 400 16px "Open Sans";
+				color: var(--white);
+			}
+		}
+		.free_for_regions {
+			width: 391px;
+			height: 61px;
+			display: flex;
+			justify-content: space-between;
+
+			.left_side {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				.left_top {
+					display: flex;
+					gap: 12px;
+					button {
+						background-color: transparent;
+						border: none;
+					}
+				}
+				.left_bottom {
+					font: 300 15px "Open Sans";
+					color: var(--white);
+				}
+			}
+			.right_side {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+		}
+		.account {
+			width: 58px;
+			height: 75px;
+		}
+	}
+`;
+
+export const StyleNumber = styled.div`
+	display: flex;
+	width: 164px;
+	height: 27px;
+	gap: 10px;
+	align-items: center;
+	img {
+		width: 16px;
+		height: 16px;
+	}
+	span {
+		color: var(--white);
+		font: 600 16px "Open Sans";
 	}
 `;

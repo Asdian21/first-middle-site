@@ -1,6 +1,11 @@
 :root {
     --black-bg: #0F0F0F;
+    --light-black-bg: #1A1A1A;
     --white: #FFFFFF;
     --disabled: #4A4A4A;
     --active: var(--white);
+    --red: #C62220;
+    --input-bg: #2C2C2C;
+    --input-color: #4E4E4E;
+    --catalog-bg: #191919;
 }
