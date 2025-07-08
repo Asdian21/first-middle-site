@@ -63,8 +63,8 @@ export const DropdownItem = styled.div<{ active?: boolean }>`
 `;
 
 export const SubMenuWrapper = styled.div`
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	column-gap: 105px;
 	row-gap: 25px;
 `;
