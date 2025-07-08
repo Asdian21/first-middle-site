@@ -45,6 +45,18 @@ export function BasicMenu() {
 				],
 			},
 			{
+				title: "Угольные грили",
+				items: [
+					"Угольные грили Weber",
+					"Угольные грили Napoleon",
+					"Угольные грили Primo",
+					"Угольные грили Oklahoma Joe's",
+					"Угольные грили Char-Broil",
+					"Угольные грили Big Green Egg",
+					"Угольные грили Start Grill",
+				],
+			},
+			{
 				title: "Керамические грили",
 				items: [
 					"Керамические грили Weber",
