@@ -26,7 +26,9 @@ export const StyleButton = styled.div`
 `;
 
 export const DropdownWrapper = styled.div`
-	width: 100vw;
+	display: flex;
+	position: absolute;
+	width: 100%;
 	height: 682px;
 	background-color: var(--catalog-bg);
 	margin-top: 85px;
@@ -34,6 +36,11 @@ export const DropdownWrapper = styled.div`
 	padding-top: 15px;
 	padding-left: 50px;
 	z-index: 10;
+
+	.subMenu {
+		display: flex;
+		margin: 37px 311px 100px 40px;
+	}
 `;
 
 export const DropdownItem = styled.div<{ active?: boolean }>`
@@ -43,6 +50,7 @@ export const DropdownItem = styled.div<{ active?: boolean }>`
 	height: 60px;
 	padding: 10px;
 	color: ${({ active }) => (active ? "#C62220" : "#FFFFFF")};
+	background-color: ${({ active }) => (active ? "#222222" : "#191919")};
 	font: 700 24px "Open Sans";
 	cursor: pointer;
 	transition: background 0.2s;
@@ -51,5 +59,29 @@ export const DropdownItem = styled.div<{ active?: boolean }>`
 		background-color: transparent;
 		border: none;
 		margin-right: 20px;
+	}
+`;
+
+export const SubMenuWrapper = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 105px;
+	row-gap: 25px;
+`;
+
+export const SubMenuTitle = styled.div`
+	color: #ffffff;
+	font: 700 22px "Open Sans";
+	margin-bottom: 10px;
+`;
+
+export const SubMenuItem = styled.div`
+	color: #b3b3b3;
+	font: 400 20px "Open Sans";
+	margin-bottom: 6px;
+	cursor: pointer;
+
+	&:hover {
+		color: var(--red);
 	}
 `;

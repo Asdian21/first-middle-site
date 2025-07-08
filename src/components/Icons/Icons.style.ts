@@ -8,7 +8,7 @@ export const IconsWrapper = styled.div`
 	margin-left: 51px;
 `;
 
-export const IconButton = styled.button<{ active?: boolean }>`
+export const IconButton = styled.button<{ $active?: boolean }>`
 	position: relative;
 	background: none;
 	border: none;
@@ -19,18 +19,18 @@ export const IconButton = styled.button<{ active?: boolean }>`
 
 	svg,
 	img {
-		filter: ${({ active }) =>
-			active ? "brightness(400%)" : "brightness(100%)"};
+		filter: ${({ $active }) =>
+			$active ? "brightness(400%)" : "brightness(100%)"};
 		transition: filter 0.2s ease;
 		width: 28px;
 		height: 28px;
 	}
 `;
 
-export const IconLabel = styled.span<{ active?: boolean }>`
+export const IconLabel = styled.span<{ $active?: boolean }>`
 	margin-top: 8px;
 	font: 400 14px "Open Sans", sans-serif;
-	color: ${({ active }) => (active ? "#FFFFFF" : "#4A4A4A")};
+	color: ${({ $active }) => ($active ? "#FFFFFF" : "#4A4A4A")};
 `;
 
 export const IconImage = styled.img`

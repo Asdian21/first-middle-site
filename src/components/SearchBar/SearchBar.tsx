@@ -5,7 +5,7 @@ import {
 	SearchInput,
 	SearchIcon,
 } from "./SearchBar.style";
-import SearchSvg from "../../../public/MainPage/search.svg";
+import SearchSvg from "../../assets/icons/search.svg";
 
 export const SearchBar = () => {
 	const [search, setSearch] = useState("");
