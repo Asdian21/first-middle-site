@@ -37,9 +37,44 @@ export const DropdownWrapper = styled.div`
 	padding-left: 50px;
 	z-index: 10;
 
+	.rightSideWrapper {
+		display: flex;
+		overflow-y: scroll;
+		/* Стилизация скроллбара для правой части */
+		&::-webkit-scrollbar {
+			width: 8px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: var(--white);
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: var(--red);
+			width: 10px;
+			height: 117px;
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: #ff3b3b;
+		}
+
+		scrollbar-width: 6px;
+		scrollbar-color: var(--white);
+	}
+
 	.subMenu {
 		display: flex;
 		margin: 37px 311px 100px 40px;
+	}
+
+	.brends {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		width: 139px;
+		overflow: hidden;
+		margin: 38px 70px 39px auto;
 	}
 `;
 

@@ -8,6 +8,12 @@ import {
 	SubMenuItem,
 } from "./BasicMenu.style";
 
+import Primo from "../../../public/MainPage/Primo.png";
+import Char_Broil from "../../../public/MainPage/Char-Broil.png";
+import Big_Green_Egg from "../../../public/MainPage/Big_Green_Egg.png";
+import weber from "../../../public/MainPage/weber.png";
+import napoleon from "../../../public/MainPage/napoleon.png";
+
 export function BasicMenu() {
 	const [open, setOpen] = useState(false);
 	const [active, setActive] = useState<string | null>(null);
@@ -83,6 +89,8 @@ export function BasicMenu() {
 		],
 	};
 
+	const brends = [Primo, Char_Broil, Big_Green_Egg, weber, napoleon];
+
 	return (
 		<>
 			<StyleButton onClick={handleToggle}>
@@ -108,20 +116,30 @@ export function BasicMenu() {
 						))}
 					</div>
 
-					<div className="subMenu">
-						{/* Правый блок — подменю */}
-						{active && subMenuData[active] && (
-							<SubMenuWrapper>
-								{subMenuData[active].map((category, index) => (
-									<div key={index}>
-										<SubMenuTitle>{category.title}</SubMenuTitle>
-										{category.items.map((sub, i) => (
-											<SubMenuItem key={i}>{sub}</SubMenuItem>
-										))}
-									</div>
-								))}
-							</SubMenuWrapper>
-						)}
+					<div className="rightSideWrapper">
+						<div className="subMenu">
+							{/* Правый блок — подменю */}
+							{active && subMenuData[active] && (
+								<SubMenuWrapper>
+									{subMenuData[active].map((category, index) => (
+										<div key={index}>
+											<SubMenuTitle>{category.title}</SubMenuTitle>
+											{category.items.map((sub, i) => (
+												<SubMenuItem key={i}>{sub}</SubMenuItem>
+											))}
+										</div>
+									))}
+								</SubMenuWrapper>
+							)}
+						</div>
+						<div className="brends">
+							{brends.map((el) => (
+								<img src={el} />
+							))}
+							{brends.map((el) => (
+								<img src={el} />
+							))}
+						</div>
 					</div>
 				</DropdownWrapper>
 			)}

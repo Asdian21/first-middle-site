@@ -14,32 +14,40 @@ export const StyleSection_1 = styled.div`
 
 		.left_info_container {
 			display: flex;
-			width: 705px;
+			width: calc(29.1vw + 146.667px);
 			margin-right: auto;
-			margin-left: 50px;
+			margin-left: calc(2.6vw + 0px);
 
 			.location {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
 				.locationImg {
-					margin-right: 15px;
+					margin-right: calc(0.9vw - 1.667px);
+					width: calc(0.8vw + 4px);
+					height: calc(0.8vw + 4px);
 				}
+
 				.location_text {
-					font: 400 16px "Open Sans";
+					font: 400 calc(0.3vw + 9.333px) "Open Sans";
 					color: var(--white);
-					margin-right: 36px;
+					margin-right: calc(2.3vw - 7.333px);
 				}
 			}
 			.work_time {
 				display: flex;
 				align-items: center;
 				.clockImg {
-					width: 19px;
-					height: 19px;
-					margin-right: 15px;
+					margin-right: calc(0.9vw - 1.667px);
+					width: calc(0.8vw + 4px);
+					height: calc(0.8vw + 4px);
 				}
 				.work_time_text {
-					font: 400 16px "Open Sans";
+					font: 400 calc(0.3vw + 9.333px) "Open Sans";
 					color: var(--white);
 					margin-right: 6px;
+					width: 90px;
 				}
 			}
 			.vertical_line {
@@ -48,20 +56,22 @@ export const StyleSection_1 = styled.div`
 				margin: auto 0;
 			}
 			.orders {
-				font: 400 16px "Open Sans";
+				font: 400 calc(0.3vw + 9.333px) "Open Sans";
 				color: var(--white);
-				margin-left: 12px;
+				margin-left: 15px;
+				display: flex;
+				align-items: center;
 			}
 		}
 
 		.right_info_container {
-			width: 576px;
+			/* width: calc(22.6vw + 142.667px); */
 			height: 27px;
 			display: flex;
-			gap: 40px;
+			gap: calc(1vw);
 			justify-content: center;
 			align-items: center;
-			margin-right: 50px;
+			margin-right: calc(3.5vw - 16.667px);
 
 			.active {
 				color: var(--active);
@@ -73,6 +83,7 @@ export const StyleSection_1 = styled.div`
 
 			a {
 				text-decoration: none;
+				font: 400 calc(0.5vw + 8px) "Open Sans";
 			}
 		}
 	}
@@ -87,7 +98,7 @@ export const StyleSection_1 = styled.div`
 		.logo {
 			background-image: url("./MainPage/logo.png");
 			background-repeat: no-repeat;
-			width: 172px;
+			width: calc(6.4vw + 48.667px);
 			height: 79px;
 			margin: 7px 64px 7px 50px;
 		}
