@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const StyleButton = styled.div`
 	color: var(--white);
-	font: 700 16px "Open Sans";
+	font: 700 calc(0.3vw + 9.333px) "Open Sans";
 	background-color: var(--red);
-
-	height: 54px;
+	height: calc(1.6vw + 24px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -20,8 +19,8 @@ export const StyleButton = styled.div`
 	}
 
 	img {
-		width: 12px;
-		height: 12px;
+		width: calc(0.3vw + 7px);
+		height: calc(0.3vw + 7px);
 	}
 `;
 

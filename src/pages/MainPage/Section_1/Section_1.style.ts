@@ -98,17 +98,19 @@ export const StyleSection_1 = styled.div`
 		.logo {
 			background-image: url("./MainPage/logo.png");
 			background-repeat: no-repeat;
-			width: calc(6.4vw + 48.667px);
-			height: 79px;
-			margin: 7px 64px 7px 50px;
+			background-size: contain;
+			width: calc(7.5vw + 28.667px);
+			height: calc(3.7vw + 7.333px);
+			margin: calc(0.6vw - 4.667px) calc(5.6vw - 42.667px) calc(0.6vw - 4.667px)
+				calc(3vw - 8.333px);
 		}
 		.search {
 			display: flex;
-			width: 684px;
-			height: 54px;
-			margin-right: 46px;
+			width: calc(42.9vw - 139.333px);
+			height: calc(1.6vw + 24px);
+			margin-right: calc(3.1vw - 14px);
 			.catalog {
-				width: 132px;
+				width: calc(5.4vw + 28.667px);
 				height: 100%;
 			}
 			.searchBar {
@@ -124,25 +126,28 @@ export const StyleSection_1 = styled.div`
 			}
 		}
 		.free_for_regions {
-			width: 391px;
-			height: 61px;
+			width: calc(13.1vw + 139.333px);
+			height: calc(2.1vw + + 19.333px);
 			display: flex;
 			justify-content: space-between;
+			margin-right: calc(-0.9vw + 16.667px);
 
 			.left_side {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
+
 				.left_top {
 					display: flex;
-					gap: 12px;
+					gap: calc(1vw - 8px);
+
 					button {
 						background-color: transparent;
 						border: none;
 					}
 				}
 				.left_bottom {
-					font: 300 15px "Open Sans";
+					font: 300 calc(0.4vw + 6.667px) "Open Sans";
 					color: var(--white);
 				}
 			}
@@ -171,29 +176,32 @@ export const StyleSection_1 = styled.div`
 
 export const StyleNumber = styled.div`
 	display: flex;
-	width: 164px;
-	height: 27px;
-	gap: 10px;
+	width: calc(4.7vw + 74px);
+	height: calc(0.6vw + 15.333px);
+	gap: calc(0.4vw + 1.667px);
 	align-items: center;
 	img {
-		width: 16px;
-		height: 16px;
+		width: calc(0.2vw + 12.667px);
+		height: calc(0.2vw + 12.667px);
 	}
 	span {
 		color: var(--white);
-		font: 600 16px "Open Sans";
+		font: 600 calc(0.5vw + 6px) "Open Sans";
 	}
 `;
 
 export const Block = styled.div<{ $active?: boolean }>`
 	display: flex;
 	background-color: ${({ $active }) => ($active ? "#232826" : "#1C1C1C")};
-	font: 400 20px "Open Sans";
+	font: 400 calc(0.6vw + 7.333px) "Open Sans";
 	height: 100%;
 	color: ${({ $active }) => ($active ? "#FFFFFF" : "#4A4A4A")};
-	padding: 19px 68px 19px 39px;
+	padding: calc(0.9vw + 2.333px) calc(4.5vw - 18.667px) calc(0.9vw + 2.333px)
+		calc(2.6vw - 11px);
 	width: 100%;
 	justify-content: center;
+	align-items: center;
+	text-align: center;
 	cursor: pointer;
 `;
 
