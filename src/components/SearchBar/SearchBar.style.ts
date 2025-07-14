@@ -19,7 +19,6 @@ export const InputWrapper = styled.div`
 
 export const SearchInput = styled.input`
 	width: 100%;
-	height: calc(0.3vw + 7px);
 	background: transparent;
 	border: none;
 	outline: none;

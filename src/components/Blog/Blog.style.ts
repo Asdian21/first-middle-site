@@ -8,7 +8,7 @@ export const StyleBlog = styled.div<{ active?: boolean }>`
 	position: absolute;
 	height: 86vh;
 	z-index: 10;
-	top: 156px;
+	top: 100%;
 
 	button {
 		width: 100%;

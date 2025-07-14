@@ -8,7 +8,7 @@ export const StyleInfo = styled.div`
 	position: absolute;
 	height: 86vh;
 	z-index: 10;
-	top: 156px;
+	top: 100%;
 
 	.info {
 		width: 100%;

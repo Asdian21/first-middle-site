@@ -13,7 +13,7 @@ export const Info = () => {
 	return (
 		<StyleInfo>
 			{info.map((el) => (
-				<div className="info">
+				<div key={el} className="info">
 					<div className="innerInfo">{el}</div>
 				</div>
 			))}

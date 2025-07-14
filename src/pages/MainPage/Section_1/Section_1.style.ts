@@ -80,6 +80,8 @@ export const Slider = styled.div`
 			img {
 				border-radius: 5px;
 				width: 100%;
+				height: 750px;
+				object-fit: cover;
 			}
 		}
 	}

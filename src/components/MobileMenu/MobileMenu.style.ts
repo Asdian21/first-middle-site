@@ -5,12 +5,14 @@ export const StyleMobileMenu = styled.div`
 	display: flex;
 	height: 70px;
 	background-color: var(--menu-item-bg);
+	position: relative;
 
 	.innerMobileMenu {
 		display: flex;
 		gap: 20px;
 		justify-content: center;
 		align-items: center;
+		margin: 0 auto;
 
 		.MenuItem {
 			display: flex;

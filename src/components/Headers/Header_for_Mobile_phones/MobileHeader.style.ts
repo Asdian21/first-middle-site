@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
-export const StyleMobileHeader = styled.div<{ menuOpen?: boolean }>`
+export const StyleMobileHeader = styled.div<{
+	$menuOpen?: boolean;
+	$contactsOpen?: boolean;
+}>`
 	display: flex;
 	flex-direction: column;
-	width: 375px;
+
 	.first_line {
 		background-color: var(--black-bg);
 
@@ -29,7 +32,8 @@ export const StyleMobileHeader = styled.div<{ menuOpen?: boolean }>`
 				border: 1px solid var(--white);
 				color: var(--white);
 				background-color: transparent;
-				padding: ${({ menuOpen }) => (menuOpen ? "11px 7px" : "5px 27px")};
+				padding: ${({ $menuOpen, $contactsOpen }) =>
+					$menuOpen || $contactsOpen ? "11px 7px" : "5px 27px"};
 			}
 		}
 	}

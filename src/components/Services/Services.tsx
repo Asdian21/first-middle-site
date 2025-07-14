@@ -10,7 +10,7 @@ export const Services = () => {
 	return (
 		<StyleServices>
 			{services.map((el) => (
-				<div className="service">
+				<div key={el} className="service">
 					<div className="innerService">{el}</div>
 				</div>
 			))}

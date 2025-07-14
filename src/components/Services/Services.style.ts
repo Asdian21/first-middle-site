@@ -8,7 +8,7 @@ export const StyleServices = styled.div`
 	position: absolute;
 	height: 86vh;
 	z-index: 10;
-	top: 156px;
+	top: 100%;
 
 	.service {
 		width: 100%;
