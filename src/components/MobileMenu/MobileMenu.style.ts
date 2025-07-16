@@ -9,7 +9,7 @@ export const StyleMobileMenu = styled.div`
 
 	.innerMobileMenu {
 		display: flex;
-		gap: 20px;
+		gap: calc(0vw + 8.148px);
 		justify-content: center;
 		align-items: center;
 		margin: 0 auto;
